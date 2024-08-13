@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+ <!-- Background Image -->
+
+ <!-- Text on top of the image -->
+
+ <ImageView
+     android:id="@+id/background_image"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:scaleType="centerCrop"
+     android:src="@drawable/dot" />
+
+ <!-- Button on top of the image -->
+
+ <TextView
+     android:id="@+id/appname"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="100dp"
+     android:layout_marginTop="70dp"
+     android:background="@android:color/transparent"
+     android:backgroundTint="@color/white"
+     android:fontFamily="cursive"
+     android:text="Airsync"
+     android:textColor="#0E2080"
+     android:textSize="60dp"
+     android:textStyle="bold" />
+
+ <TextView
+     android:id="@+id/text_on_image"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginStart="60dp"
+     android:layout_marginTop="150dp"
+     android:background="@android:color/transparent"
+     android:text="Fly Smarter , Book Faster "
+     android:textColor="#054F8A"
+     android:textSize="22sp"
+     android:fontFamily="cursive"
+     android:textStyle="italic|bold" />
+
+ <Button
+     android:id="@+id/button_on_image"
+     android:layout_width="206dp"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/text_on_image"
+     android:layout_marginStart="80dp"
+     android:layout_marginTop="410dp"
+     android:backgroundTint="@color/blackBlue"
+     android:text="Reserve Now"
+     android:textSize="18sp"
+     android:fontFamily="sans-serif-light"
+     android:textStyle="italic" />
+
+</RelativeLayout>

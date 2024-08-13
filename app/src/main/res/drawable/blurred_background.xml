@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/second"
+            android:tileMode="repeat"
+            android:gravity="center"/>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#80000000"/> <!-- semi-transparent black overlay -->
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/like">
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="cursive"
+        android:text="Airsync"
+        android:textColor="#0E2080"
+        android:textSize="60dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reservation Form"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="cursive"
+        android:textSize="30dp" />
+
+    <!-- Horizontal LinearLayout for Name and Age EditTexts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:id="@+id/userNameInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:autofillHints="Name"
+            android:hint="Name"
+            android:textColorHint="@color/black"
+            android:textSize="14sp"
+            android:background="@drawable/blurred_bg"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/userAgeInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:autofillHints="age"
+            android:minHeight="48dp"
+            android:hint="@string/ages"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:background="@drawable/blurred_bg"
+            android:textColorHint="@color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+    </LinearLayout>
+
+    <!-- Horizontal LinearLayout for Flight Number and Date EditTexts -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/flightNumberInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:hint="@string/flight_number"
+            android:textColorHint="@color/black"
+            android:background="@drawable/blurred_bg"
+            android:textSize="14sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" />
+
+        <EditText
+            android:id="@+id/dateInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
+            android:textSize="14sp"
+            android:textColorHint="@color/black"
+            android:hint="@string/date"
+            android:background="@drawable/blurred_bg"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/departureInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        android:hint="@string/departure"
+        android:minHeight="48dp"
+        android:background="@drawable/blurred_bg"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <EditText
+        android:id="@+id/destinationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/black"
+        android:hint="@string/destination"
+        android:minHeight="48dp"
+        android:textSize="14sp"
+        android:background="@drawable/blurred_bg"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" * Carefully fill out all the text fields "
+        android:textColor="@color/red"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        >
+
+    </TextView>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/blackBlue"
+        android:text="Submit" />
+
+</LinearLayout>
