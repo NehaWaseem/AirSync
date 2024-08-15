@@ -2,6 +2,7 @@ package com.example.fly.ui.view
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
@@ -43,8 +44,10 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-    private val userViewModel: UserViewModel by viewModels()
+    //i am only doing this to see whether or not it commits any changes ....
 
+    private val userViewModel: UserViewModel by viewModels()
+    private lateinit var next: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
